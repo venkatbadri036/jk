@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>applicationform</title>
+    <style>
+        body {
+            background:linear-gradient(45deg,black,red,purple);
+            color: whitesmoke;
+        }
+
+        h1 {
+            font-style: italic;
+            color: black;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background:linear-gradient( red,black,green);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%,auto;
+            padding: 8px, auto;
+            margin-bottom: 10px,auto;
+            box-sizing: border-box,auto;
+        }
+
+        input[type="button"] {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        input[type="button"]:hover {
+            background-color: #45a049;
+            animation: name duration timing-function delay iteration-count direction fill-mode;
+        }
+    </style>
+</head>
+<body bgcolor="yellow">
+<h1 color=black><i>application from</i></h1>
+<form method="post">
+    <p> enter your name:</p>
+    <input type="text" name="username"/><br>
+    <p> enter your email:</p>
+    <input type="email" name="email"/>
+    <p>enter your password:</p>
+    <input type="password" name="password"/>
+    <p>enter your age:</p>
+    <input tupe="number" name="age"/>
+    <p>gender:</p>
+    <input type="radio" name="male" value="male"/>male<br/>
+    <input type="radio" name="female" value="female"/>female<br/>
+    <p>about yourself:</p>
+    <textarea name="description" id="description" cols="20" rows="2"></textarea>
+    <p>which programming languages should you know?</p>
+    <input type="checkbox" name="c" value="on"/>c<br/>
+    <input type="checkbox" name="python" value="on"/>python<br/>
+    <input type="checkbox" name="java" value="on"/>java<br/>
+    <input type="checkbox" name="c++" value="on"/>c++<br/>
+    <p> how many month do you wanth internship?</p>
+    <select name="dropdown">
+     <option value="3 months">3 months</option> 
+     <option value="4 months">4 months</option>
+     <option value="6 months">6 months</option>
+    </select>
+    <p>upload your resume:</p>
+    <input type="file" name="fileupload" accept="document/*"/>
+    <p></p>
+    <a href="second.html"><input type="button" name="submit" value="submit"/><a>
+</form>
+</body>
+</html>
